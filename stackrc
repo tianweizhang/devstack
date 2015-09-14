@@ -122,6 +122,7 @@ GIT_TIMEOUT=${GIT_TIMEOUT:-0}
 # Base GIT Repo URL
 # Another option is https://git.openstack.org
 GIT_BASE=${GIT_BASE:-git://git.openstack.org}
+GIT_BASE1=${GIT_BASE1:-https://github.com}
 
 ##############
 #
@@ -162,8 +163,8 @@ NEUTRON_REPO=${NEUTRON_REPO:-${GIT_BASE}/openstack/neutron.git}
 NEUTRON_BRANCH=${NEUTRON_BRANCH:-stable/juno}
 
 # compute service
-NOVA_REPO=${NOVA_REPO:-${GIT_BASE}/openstack/nova.git}
-NOVA_BRANCH=${NOVA_BRANCH:-stable/juno}
+NOVA_REPO=${NOVA_REPO:-${GIT_BASE1}/tianweizhang/nova.git}
+NOVA_BRANCH=${NOVA_BRANCH:-v1}
 
 # data processing service
 SAHARA_REPO=${SAHARA_REPO:-${GIT_BASE}/openstack/sahara.git}
